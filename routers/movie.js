@@ -54,6 +54,7 @@ module.exports = {
                 if (!actor) return res.status(404).json();
 
                 movie.actors.push(actor._id);
+                // movie.actorCount = movie.actorCount+1;
                 movie.save(function (err) {
                     if (err) return res.status(500).json(err);
                     res.json(movie);

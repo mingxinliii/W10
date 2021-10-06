@@ -21,7 +21,7 @@ export class ActorComponent implements OnInit {
   y2: number = 0;
   title: string = ""; //for add an actor to a movie
   year: number = 0;
-  actorCount: number =0;
+ 
   constructor(private dbService: DatabaseService) {}
   ngOnInit() {
     this.onGetActors();
@@ -92,7 +92,7 @@ export class ActorComponent implements OnInit {
       this.changeSection(1);
       this.onGetActors();
       this.onGetMovies(); 
-      // this.actorCount++;
+      
     })  
 
   }
