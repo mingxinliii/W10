@@ -12,7 +12,11 @@ const movieSchema = new mongoose.Schema({
     actors: [{
         type: mongoose.Schema.ObjectId,
         ref: 'Actor'
-    }]
+    }],
+    actorCount:{
+        type: Number,
+        required: true
+    }
 });
 
 module.exports = mongoose.model('Movie', movieSchema);
