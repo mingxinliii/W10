@@ -17,6 +17,7 @@ export class UpdatemovieComponent implements OnInit {
   bYear: number = 0;
   actorId: string = "";
   actorsDB: any[] = [];
+  
 
 
   constructor(private dbService: DatabaseService, private router: Router) {}

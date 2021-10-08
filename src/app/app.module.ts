@@ -51,7 +51,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule, 
-    RouterModule.forRoot(appRoutes, {useHash: true}), ServiceWorkerModule.register('ngsw-worker.js', {
+    RouterModule.forRoot(appRoutes, {useHash: true}), 
+    ServiceWorkerModule.register('ngsw-worker.js', {
   enabled: environment.production,
   // Register the ServiceWorker as soon as the app is stable
   // or after 30 seconds (whichever comes first).
